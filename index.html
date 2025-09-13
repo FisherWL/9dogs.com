@@ -53,21 +53,16 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <div class="phone-mockup">
-                        <div class="phone-screen">
-                            <div class="app-preview">
-                                <div class="conversion-demo">
-                                    <div class="input-section">
-                                        <span class="value">100</span>
-                                        <span class="unit">cm</span>
-                                    </div>
-                                    <div class="arrow">→</div>
-                                    <div class="output-section">
-                                        <span class="value">39.37</span>
-                                        <span class="unit">inches</span>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="screenshot-carousel">
+                        <div class="screenshot-container">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/90/25/ea/9025ea49-2659-b61b-3319-e55473bccc63/pr_source.png/643x0w.jpg" alt="Unit Converter 2021 Screenshot 1" class="app-screenshot active">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/58/d8/3b/58d83b6f-1e4d-a9ed-4bd4-597e84218be8/pr_source.png/643x0w.jpg" alt="Unit Converter 2021 Screenshot 2" class="app-screenshot">
+                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/ff/d6/fe/ffd6fe15-1e9f-2d12-756a-cc8528606c04/pr_source.png/643x0w.jpg" alt="Unit Converter 2021 Screenshot 3" class="app-screenshot">
+                        </div>
+                        <div class="screenshot-nav">
+                            <button class="nav-dot active" onclick="showScreenshot(0)"></button>
+                            <button class="nav-dot" onclick="showScreenshot(1)"></button>
+                            <button class="nav-dot" onclick="showScreenshot(2)"></button>
                         </div>
                     </div>
                 </div>
@@ -119,6 +114,32 @@
                         </div>
                         <h3>Multi-Language</h3>
                         <p>Available in multiple languages with clear unit names and abbreviations for global users.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="screenshots">
+            <div class="container">
+                <h2 class="section-title">App Screenshots</h2>
+                <div class="screenshots-grid">
+                    <div class="screenshot-item">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/90/25/ea/9025ea49-2659-b61b-3319-e55473bccc63/pr_source.png/643x0w.jpg" alt="Length conversion interface" loading="lazy">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/58/d8/3b/58d83b6f-1e4d-a9ed-4bd4-597e84218be8/pr_source.png/643x0w.jpg" alt="Weight conversion interface" loading="lazy">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/ff/d6/fe/ffd6fe15-1e9f-2d12-756a-cc8528606c04/pr_source.png/643x0w.jpg" alt="Temperature conversion interface" loading="lazy">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/29/f7/20/29f720ba-b958-69ae-9e90-cd9aa6075651/pr_source.png/643x0w.jpg" alt="Volume conversion interface" loading="lazy">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/85/a4/a1/85a4a10c-b1d6-b6b5-1133-b0f7fec53d82/pr_source.png/643x0w.jpg" alt="Area conversion interface" loading="lazy">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/7b/db/0b/7bdb0b57-b301-40ea-b469-0bf128cb8249/pr_source.png/643x0w.jpg" alt="Energy conversion interface" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -219,6 +240,30 @@
                 header.classList.remove('scrolled');
             }
         });
+
+        // Screenshot carousel functionality
+        let currentScreenshot = 0;
+
+        function showScreenshot(index) {
+            const screenshots = document.querySelectorAll('.app-screenshot');
+            const dots = document.querySelectorAll('.nav-dot');
+
+            // Remove active class from all screenshots and dots
+            screenshots.forEach(screenshot => screenshot.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            // Add active class to current screenshot and dot
+            screenshots[index].classList.add('active');
+            dots[index].classList.add('active');
+
+            currentScreenshot = index;
+        }
+
+        // Auto-advance carousel
+        setInterval(() => {
+            const nextIndex = (currentScreenshot + 1) % 3;
+            showScreenshot(nextIndex);
+        }, 4000);
     </script>
 </body>
 </html>

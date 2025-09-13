@@ -204,88 +204,68 @@ body {
     box-shadow: var(--shadow-heavy);
 }
 
-/* Phone Mockup */
+/* Screenshot Carousel */
 .hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.phone-mockup {
-    width: 280px;
-    height: 560px;
-    background: linear-gradient(145deg, #2D2D30, #1A1A1A);
-    border-radius: 40px;
-    padding: 12px;
-    box-shadow: var(--shadow-heavy);
+.screenshot-carousel {
     position: relative;
+    max-width: 300px;
 }
 
-.phone-mockup::before {
-    content: '';
+.screenshot-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: var(--shadow-heavy);
+}
+
+.app-screenshot {
     position: absolute;
-    top: 24px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 4px;
-    background: #333;
-    border-radius: 2px;
-}
-
-.phone-screen {
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    border-radius: 32px;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 30px;
+}
+
+.app-screenshot.active {
+    opacity: 1;
+}
+
+.screenshot-nav {
     display: flex;
-    align-items: center;
     justify-content: center;
-    overflow: hidden;
+    gap: 12px;
+    margin-top: 20px;
 }
 
-.app-preview {
-    background: white;
-    border-radius: 20px;
-    padding: 40px 20px;
-    margin: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 90%;
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 122, 255, 0.3);
+    cursor: pointer;
+    transition: var(--transition);
 }
 
-.conversion-demo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.nav-dot.active {
+    background: var(--primary-color);
+    transform: scale(1.2);
 }
 
-.input-section, .output-section {
-    text-align: center;
-    padding: 16px;
-    background: var(--background-secondary);
-    border-radius: 12px;
-    width: 100%;
-}
-
-.value {
-    display: block;
-    font-size: 32px;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 4px;
-}
-
-.unit {
-    font-size: 16px;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-.arrow {
-    font-size: 24px;
-    color: var(--primary-color);
-    font-weight: 600;
+.nav-dot:hover {
+    background: var(--primary-color);
+    opacity: 0.8;
 }
 
 /* Features Section */
@@ -351,6 +331,45 @@ body {
     color: var(--text-secondary);
     line-height: 1.6;
     font-size: 16px;
+}
+
+/* Screenshots Section */
+.screenshots {
+    padding: 80px 0;
+    background: var(--background-tertiary);
+}
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.screenshot-item {
+    position: relative;
+    border-radius: var(--border-radius-large);
+    overflow: hidden;
+    box-shadow: var(--shadow-medium);
+    transition: var(--transition);
+    background: white;
+}
+
+.screenshot-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.screenshot-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: var(--transition);
+}
+
+.screenshot-item:hover img {
+    transform: scale(1.05);
 }
 
 /* Conversions Section */
@@ -550,8 +569,11 @@ body {
         justify-content: center;
     }
 
-    .phone-mockup {
-        width: 240px;
+    .screenshot-carousel {
+        max-width: 240px;
+    }
+
+    .screenshot-container {
         height: 480px;
     }
 
@@ -567,6 +589,11 @@ body {
 
     .feature-card {
         padding: 32px 24px;
+    }
+
+    .screenshots-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
     }
 
     .conversion-examples {
@@ -612,9 +639,17 @@ body {
         font-size: 14px;
     }
 
-    .phone-mockup {
-        width: 200px;
+    .screenshot-carousel {
+        max-width: 200px;
+    }
+
+    .screenshot-container {
         height: 400px;
+    }
+
+    .screenshots-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
     }
 
     .features, .conversions, .download {
