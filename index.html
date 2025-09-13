@@ -3,267 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit Converter 2021 - 9Dogs</title>
-    <meta name="description" content="Unit Converter 2021 - Eliminate confusion with an easy-to-use unit conversion app. Convert cm to inches, kg to lbs, and more!">
-    <link rel="stylesheet" href="styles.css">
+    <title>Unit Converter 2021 - Simple & Intuitive Unit Conversion</title>
+    <meta name="description" content="The most intuitive unit converter app for iOS. Convert cm to inches, kg to lbs, and more with a clean interface.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <h1>9Dogs</h1>
-            </div>
-            <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#download">Download</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Unit Converter 2021</a>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <main>
-        <section class="hero">
+    <section class="hero">
+        <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">Unit Converter 2021</h1>
-                    <p class="hero-subtitle">Eliminate confusion with the most intuitive unit conversion app</p>
-                    <p class="hero-description">
-                        Convert commonly used units like cm to inches, kg to lbs, ounces to grams with ease.
-                        Designed to provide a clean, distraction-free experience.
-                    </p>
-                    <div class="hero-stats">
+                    <h1>Eliminate Confusion in Unit Conversion</h1>
+                    <p class="hero-subtitle">The most intuitive unit converter designed with simplicity in mind. Convert commonly used units like cm to inches, kg to lbs, and ounces to grams effortlessly.</p>
+
+                    <div class="app-stats">
                         <div class="stat">
-                            <i class="fas fa-star"></i>
-                            <span>4.7/5</span>
-                            <small>391 ratings</small>
+                            <span class="rating"></span>
+                            <span class="rating-text">4.7/5 from 391 reviews</span>
                         </div>
                         <div class="stat">
-                            <i class="fas fa-download"></i>
-                            <span>Free</span>
-                            <small>with Premium</small>
+                            <span class="languages">29 Languages</span>
                         </div>
                     </div>
-                    <div class="cta-buttons">
-                        <a href="https://apps.apple.com/us/app/unit-converter-2021/id1515666116" class="btn-primary" target="_blank">
-                            <i class="fab fa-apple"></i>
-                            Download on App Store
-                        </a>
-                    </div>
+
+                    <a href="https://apps.apple.com/us/app/unit-converter-2021/id1515666116" class="download-btn" target="_blank">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
+                    </a>
+                    <p class="price">Free with Premium upgrade ($0.99)</p>
                 </div>
-                <div class="hero-image">
-                    <div class="screenshot-carousel">
-                        <div class="screenshot-container">
-                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/90/25/ea/9025ea49-2659-b61b-3319-e55473bccc63/pr_source.png/643x0w.jpg" alt="Unit Converter 2021 Screenshot 1" class="app-screenshot active">
-                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/58/d8/3b/58d83b6f-1e4d-a9ed-4bd4-597e84218be8/pr_source.png/643x0w.jpg" alt="Unit Converter 2021 Screenshot 2" class="app-screenshot">
-                            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/ff/d6/fe/ffd6fe15-1e9f-2d12-756a-cc8528606c04/pr_source.png/643x0w.jpg" alt="Unit Converter 2021 Screenshot 3" class="app-screenshot">
-                        </div>
-                        <div class="screenshot-nav">
-                            <button class="nav-dot active" onclick="showScreenshot(0)"></button>
-                            <button class="nav-dot" onclick="showScreenshot(1)"></button>
-                            <button class="nav-dot" onclick="showScreenshot(2)"></button>
-                        </div>
-                    </div>
+
+                <div class="hero-phone">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/90/25/ea/9025ea49-2659-b61b-3319-e55473bccc63/pr_source.png/643x0w.jpg" alt="Unit Converter 2021 Screenshot" class="phone-screenshot">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="features" class="features">
-            <div class="container">
-                <h2 class="section-title">Why Choose Unit Converter 2021?</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-list"></i>
-                        </div>
-                        <h3>Scrollable Lists</h3>
-                        <p>Limit distracting unit options with organized, scrollable lists that show only what you need.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-mouse-pointer"></i>
-                        </div>
-                        <h3>Responsive Buttons</h3>
-                        <p>Clear unit abbreviations and responsive buttons make conversions quick and intuitive.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-sort"></i>
-                        </div>
-                        <h3>Smart Organization</h3>
-                        <p>Categories sorted by frequency of use, putting the most common conversions at your fingertips.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-navigation"></i>
-                        </div>
-                        <h3>Simple Navigation</h3>
-                        <p>Effortless navigation between screens with a clean, user-focused interface design.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-ad"></i>
-                        </div>
-                        <h3>No Intrusive Ads</h3>
-                        <p>Focus on your conversions without distracting advertisements interrupting your workflow.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <h3>Multi-Language</h3>
-                        <p>Available in multiple languages with clear unit names and abbreviations for global users.</p>
-                    </div>
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose Unit Converter 2021?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">=Ï</div>
+                    <h3>Smart Unit Selection</h3>
+                    <p>Scrollable lists with commonly used units, sorted by frequency of use for faster access.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><¯</div>
+                    <h3>Clean Interface</h3>
+                    <p>High signal-to-noise ratio design that eliminates confusion with clear unit abbreviations.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">¡</div>
+                    <h3>Intuitive Navigation</h3>
+                    <p>Simple navigation between screens with responsive buttons and distraction-free experience.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><</div>
+                    <h3>Global Support</h3>
+                    <p>Available in 29 languages with support for iOS 9.0+ and Mac compatibility.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="screenshots">
-            <div class="container">
-                <h2 class="section-title">App Screenshots</h2>
-                <div class="screenshots-grid">
-                    <div class="screenshot-item">
-                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/90/25/ea/9025ea49-2659-b61b-3319-e55473bccc63/pr_source.png/643x0w.jpg" alt="Length conversion interface" loading="lazy">
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/58/d8/3b/58d83b6f-1e4d-a9ed-4bd4-597e84218be8/pr_source.png/643x0w.jpg" alt="Weight conversion interface" loading="lazy">
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/ff/d6/fe/ffd6fe15-1e9f-2d12-756a-cc8528606c04/pr_source.png/643x0w.jpg" alt="Temperature conversion interface" loading="lazy">
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/29/f7/20/29f720ba-b958-69ae-9e90-cd9aa6075651/pr_source.png/643x0w.jpg" alt="Volume conversion interface" loading="lazy">
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/85/a4/a1/85a4a10c-b1d6-b6b5-1133-b0f7fec53d82/pr_source.png/643x0w.jpg" alt="Area conversion interface" loading="lazy">
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/7b/db/0b/7bdb0b57-b301-40ea-b469-0bf128cb8249/pr_source.png/643x0w.jpg" alt="Energy conversion interface" loading="lazy">
-                    </div>
-                </div>
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2>See It in Action</h2>
+            <div class="screenshots-grid">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/90/25/ea/9025ea49-2659-b61b-3319-e55473bccc63/pr_source.png/643x0w.jpg" alt="Length Conversion" loading="lazy">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/58/d8/3b/58d83b6f-1e4d-a9ed-4bd4-597e84218be8/pr_source.png/643x0w.jpg" alt="Weight Conversion" loading="lazy">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/ff/d6/fe/ffd6fe15-1e9f-2d12-756a-cc8528606c04/pr_source.png/643x0w.jpg" alt="Temperature Conversion" loading="lazy">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/29/f7/20/29f720ba-b958-69ae-9e90-cd9aa6075651/pr_source.png/643x0w.jpg" alt="Volume Conversion" loading="lazy">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/85/a4/a1/85a4a10c-b1d6-b6b5-1133-b0f7fec53d82/pr_source.png/643x0w.jpg" alt="Area Conversion" loading="lazy">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/7b/db/0b/7bdb0b57-b301-40ea-b469-0bf128cb8249/pr_source.png/643x0w.jpg" alt="Energy Conversion" loading="lazy">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="conversions">
-            <div class="container">
-                <h2 class="section-title">Popular Conversions</h2>
-                <div class="conversion-examples">
-                    <div class="conversion-item">
-                        <span class="from">Centimeters</span>
-                        <i class="fas fa-arrow-right"></i>
-                        <span class="to">Inches</span>
-                    </div>
-                    <div class="conversion-item">
-                        <span class="from">Kilograms</span>
-                        <i class="fas fa-arrow-right"></i>
-                        <span class="to">Pounds</span>
-                    </div>
-                    <div class="conversion-item">
-                        <span class="from">Ounces</span>
-                        <i class="fas fa-arrow-right"></i>
-                        <span class="to">Grams</span>
-                    </div>
-                    <div class="conversion-item">
-                        <span class="from">Fahrenheit</span>
-                        <i class="fas fa-arrow-right"></i>
-                        <span class="to">Celsius</span>
-                    </div>
-                </div>
+    <section id="download" class="download">
+        <div class="container">
+            <h2>Ready to Simplify Your Conversions?</h2>
+            <p>Join thousands of users who have made unit conversion effortless</p>
+            <a href="https://apps.apple.com/us/app/unit-converter-2021/id1515666116" class="download-btn large" target="_blank">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
+            </a>
+            <div class="compatibility">
+                <p>Compatible with iPhone, iPad, iPod touch, and Mac with Apple M1 chip</p>
+                <p>Requires iOS 9.0 or later</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="download" class="download">
-            <div class="container">
-                <div class="download-content">
-                    <h2>Ready to Eliminate Conversion Confusion?</h2>
-                    <p>Join thousands of users who trust Unit Converter 2021 for their daily conversions</p>
-                    <div class="download-info">
-                        <div class="compatibility">
-                            <h4>Compatibility</h4>
-                            <ul>
-                                <li><i class="fas fa-mobile-alt"></i> iPhone</li>
-                                <li><i class="fas fa-tablet-alt"></i> iPad</li>
-                                <li><i class="fas fa-music"></i> iPod touch</li>
-                            </ul>
-                            <p class="requirements">Requires iOS 9.0 or later</p>
-                        </div>
-                        <div class="download-button">
-                            <a href="https://apps.apple.com/us/app/unit-converter-2021/id1515666116" class="btn-download" target="_blank">
-                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="contact" class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>9Dogs</h3>
-                    <p>Creating intuitive apps that eliminate everyday confusion</p>
+                <div class="footer-info">
+                    <h3>Unit Converter 2021</h3>
+                    <p>Designed to eliminate confusion in unit conversion</p>
                 </div>
                 <div class="footer-contact">
-                    <h4>Get in Touch</h4>
-                    <p>
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:weiqiaochun@gmail.com">weiqiaochun@gmail.com</a>
-                    </p>
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:weiqiaochun@gmail.com">weiqiaochun@gmail.com</a></p>
+                    <p>Support: <a href="mailto:app@1m1000mm.com">app@1m1000mm.com</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 9Dogs. All rights reserved.</p>
+                <p>&copy; 2024 9Dogs.com - Unit Converter 2021 by Wei Qiaochun</p>
             </div>
         </div>
     </footer>
-
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Add scroll effect to header
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Screenshot carousel functionality
-        let currentScreenshot = 0;
-
-        function showScreenshot(index) {
-            const screenshots = document.querySelectorAll('.app-screenshot');
-            const dots = document.querySelectorAll('.nav-dot');
-
-            // Remove active class from all screenshots and dots
-            screenshots.forEach(screenshot => screenshot.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-
-            // Add active class to current screenshot and dot
-            screenshots[index].classList.add('active');
-            dots[index].classList.add('active');
-
-            currentScreenshot = index;
-        }
-
-        // Auto-advance carousel
-        setInterval(() => {
-            const nextIndex = (currentScreenshot + 1) % 3;
-            showScreenshot(nextIndex);
-        }, 4000);
-    </script>
 </body>
 </html>
