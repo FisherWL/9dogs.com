@@ -1,5 +1,5 @@
 ---
-title: Unit Converter 2021 — by 9dogs
+title: Unit Converter App — Wei Qiaochun Design
 permalink: /
 ---
 
@@ -30,7 +30,7 @@ blockquote { background:#f9fafb; border-left:4px solid var(--accent); padding:.7
 {% assign app = site.data.app_parsed %}
 
 <div class="hero">
-  <h1>{{ app.trackName | default: "Unit Converter 2021" }}</h1>
+  <h1>{{ app.trackName | default: "Unit Converter" }}</h1>
   <p class="lead">A simple, fast, and clean unit converter built for clarity.</p>
   <a class="cta" href="{{ app.trackViewUrl | default: site.app_store_url }}" rel="noopener" target="_blank">Download on the App Store</a>
   <div class="meta">
@@ -78,4 +78,3 @@ blockquote { background:#f9fafb; border-left:4px solid var(--accent); padding:.7
   Questions? Contact <a href="mailto:{{ site.email }}">{{ site.email }}</a> · © {{ "now" | date: "%Y" }} 9dogs
   {% if app.sellerUrl %} · <a href="{{ app.sellerUrl }}" target="_blank" rel="noopener">Support</a>{% endif %}
 </p>
-
