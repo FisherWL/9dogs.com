@@ -20,6 +20,7 @@
         <div class="navlinks">
           <a href="/interior-ai/">Interior AI</a>
           <a href="/interior-ai/privacy-policy/">Privacy</a>
+          <a href="/interior-ai/terms-and-conditions/">Terms</a>
         </div>
       </nav>
     </header>
@@ -39,10 +40,12 @@
             <li><a href="#information-we-collect">Information we collect</a></li>
             <li><a href="#how-we-use">How we use information</a></li>
             <li><a href="#sharing">Sharing</a></li>
+            <li><a href="#ai-processing">AI processing</a></li>
             <li><a href="#choices">Your choices</a></li>
             <li><a href="#retention">Data retention</a></li>
             <li><a href="#security">Security</a></li>
             <li><a href="#children">Children’s privacy</a></li>
+            <li><a href="#international">International transfers</a></li>
             <li><a href="#changes">Changes</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -50,17 +53,19 @@
 
         <h2 id="summary">Summary</h2>
         <p>
-          This policy explains what information we collect in the App, why we collect it, and how
-          you can request deletion or get help. If you have questions, contact us at
-          <a href="mailto:support@9dogs.com">support@9dogs.com</a>.
+          This policy explains what information we collect when you use Interior AI, how we use it,
+          and the choices you have. If you have questions or want to request deletion, email
+          <a href="mailto:app@9dogs.com">app@9dogs.com</a>.
         </p>
 
         <h2 id="information-we-collect">Information we collect</h2>
         <h3>Information you provide</h3>
         <ul>
           <li>
-            <b>Photos and images you choose to upload</b> (for example, room photos) to generate
-            outputs inside the App.
+            <b>Photos and images you choose to upload</b> (for example, room photos).
+          </li>
+          <li>
+            <b>Text inputs and preferences</b> (for example, style/vibe selections and prompts).
           </li>
           <li>
             <b>Support messages</b> you send to us (for example, email content and attachments).
@@ -70,20 +75,28 @@
         <h3>Information collected automatically</h3>
         <ul>
           <li>
-            <b>Device and app information</b> (such as device model, OS version, app version, language,
-            and approximate region).
+            <b>Device and app information</b> (such as device model, OS version, app version, language, and
+            general region inferred from settings/IP address).
           </li>
           <li>
             <b>Diagnostics</b> (crash logs and performance data) to help us fix bugs and improve reliability.
           </li>
           <li>
-            <b>Usage data</b> (for example, which screens are visited and which features are used) in
-            aggregated or de-identified form where possible.
+            <b>Usage data</b> (for example, which screens are visited and which features are used), in aggregated
+            or de-identified form where possible.
+          </li>
+          <li>
+            <b>Device identifiers</b> (for example, Android ID/SSAID or iOS IDFV) used to help prevent abuse
+            (such as repeated promotional credit claims) and support account functionality.
           </li>
         </ul>
 
-        <p class="fine">
-          Note: The exact categories may vary depending on the features you use and how the App is configured.
+        <h3>Purchases</h3>
+        <p>
+          If you purchase a subscription or other in-app products, the transaction is processed by the app store
+          (Apple App Store or Google Play). We and our monetization provider may receive information such as
+          your subscription status and purchase/entitlement events, but we do not receive your full payment card
+          details from the store.
         </p>
 
         <h2 id="how-we-use">How we use information</h2>
@@ -96,40 +109,71 @@
         </ul>
 
         <h2 id="sharing">Sharing</h2>
-        <p>We may share information in these limited cases:</p>
+        <p>We share information only as needed to provide the App, including:</p>
         <ul>
           <li>
-            <b>Service providers</b> that help us run the App (for example, hosting, analytics, crash reporting,
-            and customer support). They are permitted to process data only to provide services to us.
+            <b>Infrastructure and storage</b> (for example, Supabase for authentication, database, and file storage).
           </li>
           <li>
-            <b>Legal and safety</b> when we believe disclosure is necessary to comply with law or protect
-            rights, safety, and integrity.
+            <b>AI processing providers</b> used to analyze your inputs and generate outputs (for example, Google
+            Gemini APIs). This may include sending uploaded images and related prompts to the provider.
           </li>
           <li>
-            <b>Business transfers</b> if we’re involved in a merger, acquisition, or asset sale (you’ll be
-            notified if required by law).
+            <b>Purchases and subscriptions</b> (for example, RevenueCat to manage entitlements/credits, and the
+            relevant app store for billing).
+          </li>
+          <li>
+            <b>Legal and safety</b> when we believe disclosure is necessary to comply with law or protect rights,
+            safety, and integrity.
+          </li>
+          <li>
+            <b>Business transfers</b> if we’re involved in a merger, acquisition, or asset sale (you’ll be notified
+            if required by law).
           </li>
         </ul>
+        <p class="fine" style="margin-top: 10px;">
+          Third-party policies (non-exhaustive):
+          <a href="https://supabase.com/privacy">Supabase</a>,
+          <a href="https://policies.google.com/privacy">Google</a>,
+          <a href="https://www.revenuecat.com/privacy">RevenueCat</a>,
+          <a href="https://www.apple.com/legal/privacy/">Apple</a>.
+        </p>
+
+        <h2 id="ai-processing">AI processing</h2>
+        <p>
+          The App uses AI to analyze room photos and generate redesigned images and design specs. In practice this can
+          involve:
+        </p>
+        <ul>
+          <li>Processing your uploaded images and prompts to produce outputs.</li>
+          <li>Storing generated outputs (images and text) so you can view them later.</li>
+        </ul>
+        <p>
+          We do not intentionally use your content to train our own models. Our AI providers process data to provide the
+          service; review their policies for details on their handling of data.
+        </p>
 
         <h2 id="choices">Your choices</h2>
         <ul>
           <li>
-            <b>Access and deletion requests:</b> You can contact us to request access to or deletion of
-            personal information we may hold about you.
+            <b>Access and deletion requests:</b> You can contact us to request access to or deletion of personal
+            information we may hold about you.
           </li>
           <li>
             <b>Permissions:</b> You can control photo/library permissions in your device settings.
           </li>
           <li>
-            <b>Analytics controls:</b> If the App provides an in-app toggle for analytics, you can use it to opt out.
+            <b>Uninstall:</b> You can stop most collection by uninstalling the App. Some information (such as purchase
+            records) may remain with the app store and our providers as required for legal/compliance reasons.
           </li>
         </ul>
 
         <h2 id="retention">Data retention</h2>
         <p>
           We retain information only as long as needed for the purposes described in this policy, unless a longer
-          retention period is required or permitted by law. We may retain de-identified or aggregated data longer.
+          retention period is required or permitted by law. For example, we may retain generated projects/outputs so
+          you can access them again, and we may retain certain logs for security and debugging. We may retain
+          de-identified or aggregated data longer.
         </p>
 
         <h2 id="security">Security</h2>
@@ -145,6 +189,12 @@
           we will take appropriate steps to delete it.
         </p>
 
+        <h2 id="international">International transfers</h2>
+        <p>
+          We and our service providers may process and store information on servers located outside of your country
+          of residence. Data protection laws may differ from those in your jurisdiction.
+        </p>
+
         <h2 id="changes">Changes</h2>
         <p>
           We may update this policy from time to time. We will update the “Effective date” above when we make
@@ -157,12 +207,11 @@
           <br />
           <b>9dogs</b>
           <br />
-          Email: <a href="mailto:support@9dogs.com">support@9dogs.com</a>
+          Email: <a href="mailto:app@9dogs.com">app@9dogs.com</a>
         </p>
 
         <p class="fine">
-          This template is provided for convenience and should be reviewed to ensure it matches your App’s
-          actual data practices.
+          This page is provided for convenience and should be reviewed to ensure it matches your App’s actual data practices.
         </p>
       </article>
 
@@ -170,7 +219,8 @@
         <div class="fine">© <span id="y"></span> 9dogs • <a href="/interior-ai/">Interior AI</a></div>
         <div class="footlinks" aria-label="Footer links">
           <a href="/">Home</a>
-          <a href="mailto:support@9dogs.com">Support</a>
+          <a href="/interior-ai/terms-and-conditions/">Terms</a>
+          <a href="mailto:app@9dogs.com">Contact</a>
         </div>
       </footer>
     </main>
@@ -180,4 +230,3 @@
     </script>
   </body>
 </html>
-
